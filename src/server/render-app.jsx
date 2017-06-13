@@ -36,6 +36,7 @@ const renderApp = (location: string, plainPartialState: ?Object, routerContext: 
         <link rel="shortcut icon" href="${STATIC_PATH}/images/favicon-32x32.png" type="image/x-icon" />
         <link rel="stylesheet" href="${STATIC_PATH}/css/bootstrap.min.css">
         <style class="${JSS_SSR_CLASS}">${sheets.toString()}</style>
+        <link rel="stylesheet" href="https://unpkg.com/react-table@latest/react-table.css">
       </head>
       <body>
         <div class="${APP_CONTAINER_CLASS}">${appHtml}</div>

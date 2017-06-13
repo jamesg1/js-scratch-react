@@ -6,6 +6,8 @@ export const helloPage = () => ({
   hello: { message: 'Server-side preloaded message' },
 })
 
+export const ladderPage = () => null
+
 export const helloAsyncPage = () => ({
   hello: { messageAsync: 'Server-side preloaded message for async page' },
 })

@@ -3,6 +3,7 @@
 import {
   homePage,
   helloPage,
+  ladderPage,
   helloAsyncPage,
   helloEndpoint,
 } from './controller'
@@ -10,6 +11,7 @@ import {
 import {
   HOME_PAGE_ROUTE,
   HELLO_PAGE_ROUTE,
+  LADDER_PAGE_ROUTE,
   HELLO_ASYNC_PAGE_ROUTE,
   helloEndpointRoute,
 } from '../shared/routes'
@@ -23,6 +25,10 @@ export default (app: Object) => {
 
   app.get(HELLO_PAGE_ROUTE, (req, res) => {
     res.send(renderApp(req.url, helloPage()))
+  })
+
+  app.get(LADDER_PAGE_ROUTE, (req, res) => {
+    res.send(renderApp(req.url, ladderPage()))
   })
 
   app.get(HELLO_ASYNC_PAGE_ROUTE, (req, res) => {

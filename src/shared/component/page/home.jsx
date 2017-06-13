@@ -58,6 +58,7 @@ const HomePage = ({ classes }: { classes: Object }) =>
       </div>
     </div>
     <ModalExample />
+
   </div>
 
 export default injectSheet(styles)(HomePage)

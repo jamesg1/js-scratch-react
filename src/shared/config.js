@@ -11,6 +11,7 @@ export const APP_CONTAINER_SELECTOR = `.${APP_CONTAINER_CLASS}`
 
 export const HOME_PAGE_ROUTE = '/'
 export const HELLO_PAGE_ROUTE = '/hello'
+export const LADDER_PAGE_ROUTE = '/ladder'
 export const HELLO_ASYNC_PAGE_ROUTE = '/hello-async'
 export const NOT_FOUND_DEMO_PAGE_ROUTE = '/404'
 
