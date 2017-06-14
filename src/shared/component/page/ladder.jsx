@@ -6,6 +6,9 @@ import ReactTable from 'react-table'
 
 import { APP_NAME } from '../../config'
 
+import Message from '../../container/message'
+import SessionButton from '../../container/season'
+
 const data = [
  {
    pos: 1,
@@ -173,6 +176,11 @@ const columns = [
   },
 ]
 
+const items = [
+  {value: "2015116", label: "2015/16 Season"},
+  {value: "201617", label: "2016/17 Season"},
+]
+
 const LadderPage = () =>
   <div>
     <Helmet
@@ -187,6 +195,7 @@ const LadderPage = () =>
       </div>
     </div>
     <div className="container">
+      <SessionButton />
       <div className="row">
           <ReactTable
             data={data}

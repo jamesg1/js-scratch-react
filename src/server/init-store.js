@@ -5,6 +5,7 @@ import { createStore, combineReducers, applyMiddleware } from 'redux'
 import thunkMiddleware from 'redux-thunk'
 
 import helloReducer from '../shared/reducer/hello'
+import seasonReducer from '../shared/reducer/season'
 
 const initStore = (plainPartialState: ?Object) => {
   const preloadedState = plainPartialState ? {} : undefined
